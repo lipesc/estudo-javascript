@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="webapp01/styles.css" />
+
+    <title>Jogo numeros</title>
+
+    <style></style>
+  </head>
+
+  <body>
+    <h1>Jogo de adivinhação de números</h1>
+
+    <p>
+      Selecionamos um número aleatório entre 1 e 100. Veja se você consegue
+      adivinhar em 10 voltas ou menos. Vamos dizer-lhe se o seu palpite foi
+      muito alto ou muito baixo.
+    </p>
+
+    <div class="form">
+      <label for="campoPalpite">Digite seu palpite: </label>
+      <input
+        type="number"
+        min="1"
+        max="100"
+        required
+        id="campoPalpite"
+        class="campoPalpite"
+      />
+      <input type="submit" value="Enviar palpite" class="envioPalpite" />
+    </div>
+
+    <div class="resultadoParas">
+      <p class="palpites"></p>
+      <p class="ultimoResultado"></p>
+      <p class="baixoOuAlto"></p>
+    </div>
+
+    <script src="/webapp02/script.js" defer></script>
+  </body>
+</html>
